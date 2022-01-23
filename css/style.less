@@ -23,11 +23,11 @@ header {
         }
         li {
             display: inline-block;
-            
             color: #fff;
             &:hover {
                 background-color: #fff;
                 color: black;
+                cursor: pointer;
             }
             i {
                 padding: 16px 30px;
@@ -237,6 +237,10 @@ header {
                     padding: 6px 14px;
                     background-color: #82a4b6;
                     font-size: 20px;
+                    &:hover {
+                        background-color: #ccc;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -264,6 +268,7 @@ header {
                         &:hover {
                             background-color: #ccc;
                             color: black;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -316,6 +321,7 @@ header {
                         &:hover {
                             background-color: #ccc;
                             color: black;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -358,6 +364,7 @@ header {
                         &:hover {
                             background-color: #ccc;
                             color: black;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -405,14 +412,100 @@ header {
                         &:hover {
                             background-color: #ccc;
                             color: black;
+                            cursor: pointer;
                         }
                     }
                 }
             }
         }
         .right_bar {
+            display: grid;
+            grid-template-rows: repeat(4, max-content);
             grid-area: right_bar;
-            background-color: yellow;
+            gap: 16px;
+            .upcoming_events {
+                text-align: center;
+                box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                div {
+                    margin: 16px;
+                    img {
+                        width: 100%;
+                        margin: 16px 0;
+                    }
+                    p {
+                        margin: 16px 0;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 8px 0;
+                        border-style: none;
+                        background-color: #dfe5e8;
+                        &:hover {
+                            background-color: #ccc;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .friend_request {
+                box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                > div {
+                    margin: 16px;
+                    text-align: center;
+                    img {
+                        width: 60%;
+                        margin-top: 16px;
+                    }
+                    > p {
+                        margin-bottom: 16px;
+                    }
+                    div {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        .check {
+                            background-color: #4CAF50;
+                            border-style: none;
+                            padding: 10px 0;
+                            opacity: 0.6;
+                            color: #fff;
+                            &:hover {
+                                background-color: #ccc;
+                                color: rgba(0, 0, 0, 0.836);
+                                cursor: pointer;
+                            }
+                        }
+                        .remove {
+                            background-color: #f44336;
+                            border-style: none;
+                            padding: 8px 0;
+                            opacity: 0.6;
+                            color: #fff;
+                            &:hover {
+                                background-color: #ccc;
+                                color: rgba(14, 13, 13, 0.589);
+                                cursor: pointer;
+                            }
+                            p {
+                                font-size: 18px;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+            .ads {
+                box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                padding: 30px 0;
+                text-align: center;
+            }
+            .icon_bug {
+                box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                padding: 44px 0;
+                text-align: center;
+                i {
+                    font-size: 26px;
+                }
+            }
         }  
     }          
 }

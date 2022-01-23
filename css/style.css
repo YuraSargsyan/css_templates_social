@@ -30,6 +30,7 @@ header ul li {
 header ul li:hover {
   background-color: #fff;
   color: black;
+  cursor: pointer;
 }
 header ul li i {
   padding: 16px 30px;
@@ -239,6 +240,10 @@ header > a img {
   background-color: #82a4b6;
   font-size: 20px;
 }
+.main_section .main_container .left_bar .hey b:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
 .main_section .main_container .middle_bar {
   display: grid;
   grid-area: middle_bar;
@@ -267,6 +272,7 @@ header > a img {
 .main_section .main_container .middle_bar .post > div button:hover {
   background-color: #ccc;
   color: black;
+  cursor: pointer;
 }
 .main_section .main_container .middle_bar .john_doe {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -317,6 +323,7 @@ header > a img {
 .main_section .main_container .middle_bar .john_doe > div button:hover {
   background-color: #ccc;
   color: black;
+  cursor: pointer;
 }
 .main_section .main_container .middle_bar .jane_doe {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -359,6 +366,7 @@ header > a img {
 .main_section .main_container .middle_bar .jane_doe > div button:hover {
   background-color: #ccc;
   color: black;
+  cursor: pointer;
 }
 .main_section .main_container .middle_bar .angie_jane {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -404,8 +412,94 @@ header > a img {
 .main_section .main_container .middle_bar .angie_jane > div button:hover {
   background-color: #ccc;
   color: black;
+  cursor: pointer;
 }
 .main_section .main_container .right_bar {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
   grid-area: right_bar;
-  background-color: yellow;
+  gap: 16px;
+}
+.main_section .main_container .right_bar .upcoming_events {
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.main_section .main_container .right_bar .upcoming_events div {
+  margin: 16px;
+}
+.main_section .main_container .right_bar .upcoming_events div img {
+  width: 100%;
+  margin: 16px 0;
+}
+.main_section .main_container .right_bar .upcoming_events div p {
+  margin: 16px 0;
+}
+.main_section .main_container .right_bar .upcoming_events div button {
+  width: 100%;
+  padding: 8px 0;
+  border-style: none;
+  background-color: #dfe5e8;
+}
+.main_section .main_container .right_bar .upcoming_events div button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.main_section .main_container .right_bar .friend_request {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.main_section .main_container .right_bar .friend_request > div {
+  margin: 16px;
+  text-align: center;
+}
+.main_section .main_container .right_bar .friend_request > div img {
+  width: 60%;
+  margin-top: 16px;
+}
+.main_section .main_container .right_bar .friend_request > div > p {
+  margin-bottom: 16px;
+}
+.main_section .main_container .right_bar .friend_request > div div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main_section .main_container .right_bar .friend_request > div div .check {
+  background-color: #4CAF50;
+  border-style: none;
+  padding: 10px 0;
+  opacity: 0.6;
+  color: #fff;
+}
+.main_section .main_container .right_bar .friend_request > div div .check:hover {
+  background-color: #ccc;
+  color: rgba(0, 0, 0, 0.836);
+  cursor: pointer;
+}
+.main_section .main_container .right_bar .friend_request > div div .remove {
+  background-color: #f44336;
+  border-style: none;
+  padding: 8px 0;
+  opacity: 0.6;
+  color: #fff;
+}
+.main_section .main_container .right_bar .friend_request > div div .remove:hover {
+  background-color: #ccc;
+  color: rgba(14, 13, 13, 0.589);
+  cursor: pointer;
+}
+.main_section .main_container .right_bar .friend_request > div div .remove p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.main_section .main_container .right_bar .ads {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px 0;
+  text-align: center;
+}
+.main_section .main_container .right_bar .icon_bug {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 44px 0;
+  text-align: center;
+}
+.main_section .main_container .right_bar .icon_bug i {
+  font-size: 26px;
 }
